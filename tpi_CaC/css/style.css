@@ -500,13 +500,13 @@ footer .flecha-hacia-arriba {
 
     .comienzoIniciarSesion {
         background-color: #333133;
-        height: 60%;
         border-radius: 10px;
         margin-top: 50px;
-        margin-left: 35%;
+        margin-left: 10%;
+        margin-right: 10%;
         align-content: center;
         padding: 40px;
-        width: 30%;
+        width: 80%;
         animation-name: inicioSesion;
         animation-duration: 0.5s;
         animation-timing-function: linear;
