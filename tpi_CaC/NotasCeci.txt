@@ -1,0 +1,17 @@
+Cosas que faltan:   
+
+"Las tendencias de hoy"
+* Ajustar bien el tamaño de las imagenes 
+* Ver el color del borde difuminado 
+
+
+"Descripcion"
+* Agregar todos los iconos y links 
+
+
+- General 
+→ hacer que las imagenes se carguen a medida que van apareciendo en la pantalla (loading="lazy")
+→ hacer que sea toda mi parte sea responsive
+
+
+https://giselemilagros88.github.io/cac_movies_javaphp/

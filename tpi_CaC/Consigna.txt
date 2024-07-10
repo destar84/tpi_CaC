@@ -1,0 +1,10 @@
+Deberán replicar la siguiente Página Web con lo visto en clase hasta el momento, puede ser código nativo o Bootstrap
+
+
+https://giselemilagros88.github.io/cac_movies_javaphp/
+
+
+Clase 7 JAVA 20240618 para seguir mirando y ver la conexion 
+video de conexion "Clase 7 JAVA 20240618" para mostrar datos
+video "Materail extra - Insert into con JAVA" para agregar datos
+#31 - Clase 1 Proyecto Final 20240625 configuracion de la conexion pero en VS-code

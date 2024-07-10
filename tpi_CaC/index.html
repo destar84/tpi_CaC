@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAC-MOVIES</title>
+    <link rel="shortcut icon" href="./img/camera-reels-fill.svg" type="image/x-icon">
+    <!-- Link a bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Link a css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Inicio del menú -->
+        <nav class="navbar navbar-expand-lg navbar-dark nav-color">
+            <div class="container-fluid">
+    
+                <!-- Logo y nombre de la tienda -->
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./img/film.svg" alt="logo" class="logo">
+                    <span>CAC-Movies</span>
+                </a>
+    
+                <!-- Botón del menú -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Elementos del menú colapsable -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link"  href="#tendencias">Tendencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/registrarse.html">Registrese</a>
+                        </li>
+                        <li class="nav-item link-iniciar-sesion">
+                            <a class="nav-link" href="./pages/iniciar_sesion.html">Inicar Sesión</a>
+                        </li>
+                        <li class="nav-item link-iniciar-sesion">
+                            <a class="nav-link" href="./pages/api.html">Conexión API</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+        <section data-aos="zoom-in" data-aos-duration="1000" class="sectionPrincipal aos-init aos-animate">
+            <h1 class="tituloPrincipal">Películas y series ilimitadas <br> en un solo lugar</h1>
+            <h2 class="subtituloPrincipal">Disfruta donde quieras. <br> Cancela en cualquier momento.</h2>
+            <a class="botonRegistrarse" href="./pages/registrarse.html">Registrate</a>
+        </section>
+
+        <section data-aos="fade-up" data-aos-offset="300" data-aos-delay="50" data-aos-duration="1000" class="buscadorPrincipal aos-init aos-animate">
+            <h2 class="tituloSection">¿Qué estas buscando para ver?</h2>
+            <form class="buscadorPeliculas">
+                <input class="inputBuscador" type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                <input class="botonBuscador" type="submit" value="Buscar">
+            </form>
+        </section>
+
+        <!--TENDENCIAS
+        <hr>
+
+        
+
+        <section id="tendencias" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="peliculasTendencia aos-init" data-page="1">
+            <h3 class="tituloSection">Las tendencias de hoy</h3>
+            <div class="peliculas" id="tendenciasContainer"><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Dune: Part Two" loading="lazy"><div class="tituloPelicula"><h4>Dune: Part Two</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" alt="Kung Fu Panda 4" loading="lazy"><div class="tituloPelicula"><h4>Kung Fu Panda 4</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//tMefBSflR6PGQLv7WvFPpKLZkyk.jpg" alt="Godzilla x Kong: The New Empire" loading="lazy"><div class="tituloPelicula"><h4>Godzilla x Kong: The New Empire</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//8QVDXDiOGHRcAD4oM6MXjE0osSj.jpg" alt="Alienoid" loading="lazy"><div class="tituloPelicula"><h4>Alienoid</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//jFK2ZLQUzo9pea0jfMCHDfvWsx7.jpg" alt="The Wages of Fear" loading="lazy"><div class="tituloPelicula"><h4>The Wages of Fear</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//bXi6IQiQDHD00JFio5ZSZOeRSBh.jpg" alt="Road House" loading="lazy"><div class="tituloPelicula"><h4>Road House</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//p1LbrdJ53dGfEhRopG71akfzOVu.jpg" alt="After the Pandemic" loading="lazy"><div class="tituloPelicula"><h4>After the Pandemic</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//rULWuutDcN5NvtiZi4FRPzRYWSh.jpg" alt="Madame Web" loading="lazy"><div class="tituloPelicula"><h4>Madame Web</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//ldfCF9RhR40mppkzmftxapaHeTo.jpg" alt="Migration" loading="lazy"><div class="tituloPelicula"><h4>Migration</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//ccJpK0rqzhQeP7Mrs2uKqObFY4L.jpg" alt="Creation of the Gods I: Kingdom of Storms" loading="lazy"><div class="tituloPelicula"><h4>Creation of the Gods I: Kingdom of Storms</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//lbOyeiiRYAE6Nm2e7xiNAAaRwZB.jpg" alt="Baghead" loading="lazy"><div class="tituloPelicula"><h4>Baghead</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//n726fdyL1dGwt15bY7Nj3XOXc4Q.jpg" alt="Heart of the Hunter" loading="lazy"><div class="tituloPelicula"><h4>Heart of the Hunter</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//y2Aimt8isimtigec3e4kB2G9FMR.jpg" alt="Hard Hit" loading="lazy"><div class="tituloPelicula"><h4>Hard Hit</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//9u6HEtZJdZDjPGGJq6YEuhPnoan.jpg" alt="Imaginary" loading="lazy"><div class="tituloPelicula"><h4>Imaginary</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//oPXzCV01ysDmnmpJOkiVqaZQ5QR.jpg" alt="The Adventures of Maid Marian" loading="lazy"><div class="tituloPelicula"><h4>The Adventures of Maid Marian</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//uoBHsxSgfc3PQsSn98RfnbePHOy.jpg" alt="The Tearsmith" loading="lazy"><div class="tituloPelicula"><h4>The Tearsmith</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//hu40Uxp9WtpL34jv3zyWLb5zEVY.jpg" alt="No Way Up" loading="lazy"><div class="tituloPelicula"><h4>No Way Up</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//3UKlVa1CBeQkRksHV5OfFTO52qd.jpg" alt="Hunters" loading="lazy"><div class="tituloPelicula"><h4>Hunters</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//iq1t8MxKDkKuV1WqyOr2RQM0hIA.jpg" alt="Argylle" loading="lazy"><div class="tituloPelicula"><h4>Argylle</h4></div></div></a></div><div class="peliculas"><a href="./pages/detalle.html"><div class="pelicula"><img class="imgTendencia" src="https://image.tmdb.org/t/p/w500//aqRXm3OXSVWuGp3bl8YO4szmos3.jpg" alt="Penoza: The Final Chapter" loading="lazy"><div class="tituloPelicula"><h4>Penoza: The Final Chapter</h4></div></div></a></div></div>
+            <button class="boton anterior">Anterior</button>  
+            <button class="boton siguiente">Siguiente</button>
+        </section>
+
+        <hr>
+
+        <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" class="peliculasAclamadas aos-init">
+            <h3 class="tituloSection">Las más aclamadas</h3>
+            <div class="aclamadas" id="aclamadasContainer"> 
+                Aquí se cargarán las películas más aclamadas
+            <div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg" alt="The Shawshank Redemption" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="The Godfather" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg" alt="The Godfather Part II" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg" alt="Schindler's List" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//ow3wq89wM8qd5X7hWKxiRfsFf9C.jpg" alt="12 Angry Men" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//39wmItIWsg5sZMyRUHLkWBcuVCM.jpg" alt="Spirited Away" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//lfRkUr7DYdHldAqi3PwdQGBRBPM.jpg" alt="Dilwale Dulhania Le Jayenge" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="The Dark Knight" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//7IiTTgloJzvGI1TAYymCfbfl3vT.jpg" alt="Parasite" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//8VG8fDNiy50H4FedGwdSVUPoaJe.jpg" alt="The Green Mile" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//q719jXXEzOoYaps6babgKnONONX.jpg" alt="Your Name." loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg" alt="Pulp Fiction" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" alt="The Lord of the Rings: The Return of the King" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//arw2vcBveWOVZr6pxd9XTd1TdQa.jpg" alt="Forrest Gump" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//bX2xnavhMYjWDoZp1VM6VnU1xwe.jpg" alt="The Good, the Bad and the Ugly" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//aKuFiU82s5ISJpGZp7YkIr3kCUd.jpg" alt="GoodFellas" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//k9tv1rXZbOhH7eiCk378x61kNQ1.jpg" alt="Grave of the Fireflies" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//8OKmBV5BUFzmozIC3pPWKHy17kx.jpg" alt="Seven Samurai" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//8SRUfRUi6x4O68n0VCbDNRa6iGL.jpg" alt="Cinema Paradiso" loading="lazy"></div><div class="peliculaItem"><img class="imgAclamada" src="https://image.tmdb.org/t/p/w500//74hLDKjD5aGYOotO6esUVaeISa2.jpg" alt="Life Is Beautiful" loading="lazy"></div></div>
+        </section> -->  
+
+        <!-- Linea separación entre section -->
+        <hr class="linea">
+        
+        <!--TENDENCIAS --> 
+        <section class="contenedor_tendencias" id="tendencias">
+
+            <h1 class="tendencias" > Las tendencias de hoy </h1>
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col" >
+                    <div class="card" >
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_1.jpg"  class="card-img-top" alt="The Beekeeper" loading="lazy">
+                        <h3>The Beekeeper</h3> 
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_2.jpg" class="card-img-top" alt="Badland Hunters" loading="lazy">
+                        <h3>Badland Hunters</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_3.jpg" class="card-img-top" alt="The Marvel" loading="lazy">
+                        <h3>The Marvel</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_4.jpg" class="card-img-top" alt="Wonka" loading="lazy">
+                        <h3>Wonka</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_5.jpg" class="card-img-top" alt="Aquaman and the lost kingdon" loading="lazy">
+                        <h3>Aquaman and the lost kingdon</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_6.jpg" class="card-img-top" alt="Migration" loading="lazy">
+                        <h3>Migration</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_7.jpg" class="card-img-top" alt="60 minutes" loading="lazy">
+                        <h3>60 minutes</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_8.jpg" class="card-img-top" alt="Wish" loading="lazy">
+                        <h3>Wish</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_9.jpg" class="card-img-top" alt="The Masked Saint" loading="lazy">
+                        <h3>The Masked Saint</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_10.jpg" class="card-img-top" alt="Due Justice" loading="lazy">
+                        <h3>Due Justice</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_11.jpg" class="card-img-top" alt="Orion and the dark" loading="lazy">
+                        <h3>Orion and the dark</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                            <img src="./img/peli_12.jpg" class="card-img-top" alt="Peli" loading="lazy">
+                            <h3>No se que peli es</h3>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_13.jpg" class="card-img-top" alt="Lift" loading="lazy">
+                        <h3>Lift</h3>                        
+                        </a>
+
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                            <img src="./img/peli_14.jpg" class="card-img-top" alt="Attack" loading="lazy">
+                            <h3>Attack</h3>  
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                            <img src="./img/peli_15.jpg" class="card-img-top" alt="Mutant ghost wargirl" loading="lazy">
+                            <h3>Mutant ghost wargirl</h3>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_16.jpg" class="card-img-top" alt="Poor things" loading="lazy">
+                        <h3>Poor things</h3>                        
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_17.jpg" class="card-img-top" alt="The 5" loading="lazy">
+                        <h3>The 5</h3>                        
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_18.jpg" class="card-img-top" alt="Trunk locked in" loading="lazy">
+                        <h3>Trunk locked in</h3>                        
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col">
+                    <div class="card">
+                        <a href="./pages/detalle_peli.html">
+                        <img src="./img/peli_19.jpg" class="card-img-top" alt="Anyone but you" loading="lazy">
+                        <h3>Anyone but you</h3>                        
+                        </a>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+        <!--Botones de siguiente y anterior-->
+        <div class="botones">
+            <button class="boton">Anterior</button>  
+            <button class="boton">Siguiente</button>
+        </div>
+    ¿
+        
+        <!-- Linea separación entre section -->
+        <hr class="linea">
+
+        <!--Las mas aclamadas-->
+        <section class="contenedor">
+            <h2 class="aclamada">Las más aclamadas</h2>
+
+                <div class="slider" loading="lazy">
+                    <img src="./img/aclamada_1.jpg"  alt="The Shawshank Redemption">
+                    <img src="./img/aclamada_2.jpg"  alt="The Godfather">
+                    <img src="./img/aclamada_3.jpg" alt="The Godfather Part II">
+                    <img src="./img/aclamada_4.jpg"  alt="Schindler">
+                    <img src="./img/aclamada_5.jpg"  alt="12 Angry Men">
+                    <img src="./img/aclamada_6.jpg" alt="Spirited Away">
+                    <img src="./img/aclamada_7.jpg"  alt="The Dark Knight">
+                    <img src="./img/aclamada_8.jpg"  alt="Parasite">
+                    <img src="./img/aclamada_9.jpg"  alt="The Green Mile">
+                    <img src="./img/aclamada_10.jpg"  alt="Forrest Gump">
+                    <img src="./img/aclamada_11.jpg"  alt="Pulp Fiction">
+                    <img src="./img/aclamada_12.jpg"  alt="The Lord of the Rings">
+                </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>
+                <a class="link-footer"  href="./index.html">Términos y condiciones</a></li>
+            <li>
+            <a class="link-footer" href="./index.html">Preguntas frecuentes</a>
+            </li>
+            <li>
+                <a class="link-footer" href="./index.html">Ayuda</a>
+            </li>
+            <li>
+                <a class="link-footer link-administrador" href="./index.html">Administrador Peliculas</a>
+            </li>
+        </ul>
+        <a href="#main" class="flecha-hacia-arriba"><img src="./img/flecha-hacia-arriba.png" alt="flecha-hacia-arriba"></a>
+    </footer>
+
+    <!-- Link a script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Link a index.js -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

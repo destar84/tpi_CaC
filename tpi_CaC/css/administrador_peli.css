@@ -1,0 +1,105 @@
+/* Importamos tipografía desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* Reseteamos todos los valores a 0 para no tener conflictos con el estilo */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.bodyAdministrarPeli {
+    height: 100vh;
+    background: linear-gradient(to right top, #24242473, #24242473), url(../img/bg-register.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+    .headerAdministrarPeli {
+        position: sticky;
+        top: 30px;
+        background-color: transparent;
+        color: white;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    .comienzoAdministrarPeli {
+        background-color: #333133;
+        height: 100%;
+        border-radius: 10px;
+        margin: 60px;
+        align-content: center;
+        padding: 40px;
+        animation-name: inicioSesion;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        overflow: auto;
+    }
+                          
+    .tituloAdministrarPeli {
+            font-weight: 700;
+            text-align: left;
+            color: white;
+            font-family: "Nunito", sans-serif;
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+        }
+    .casillero {
+           
+            border-radius: 20px;
+            border: #9f3647 2px solid;
+            background-color: white;
+            padding: 1rem;
+            margin: 1rem;
+            width: 82%; 
+        }
+    .botonAdministrarPeli{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: #3f2126;
+            border-radius: 2px;
+            border: 2px solid #3f2126;
+            color: #ffffff;
+            padding: 1rem;
+            font-size: 1rem;
+            font-weight: 400;
+            width: 23%;
+                       
+        }
+        .tablaAdministrarPeli{
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            table-layout: auto;
+ width: 300px
+            
+        }
+ .encabezadotablapeliculas {
+                padding: 8px;
+                border-bottom: 1px solid #a5a1a1;
+                
+            }
+        .registrar{
+            color: #ffffff;
+            text-align: center;
+        }
+        
+        .terminos{
+            color: #ffffff;
+            
+        }
+
+    
+@keyframes inicioSesion {
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+
+
+
+}
