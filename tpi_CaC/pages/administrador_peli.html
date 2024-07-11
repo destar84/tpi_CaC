@@ -30,55 +30,45 @@
 
 
     <div class="comienzoAdministrarPeli">
-        <div class="tituloAdministrarPeli"><h1>Gestion de películas</h1>
-            <h5>En esta sección usted podrá anotar sus películas favoritas.</h5>
+        <div class="formularioAdministrarPeli">
+          <h1 class="tituloAdministrarPeli">Gestion de películas</h1>
+            <h5 class="tituloAdministrarPeli">En esta sección usted podrá anotar sus películas favoritas.</h5>
           <form id="miFormulario" action="">
-              <p>
-                <p>
-
-                </p>
+             
+                <label class="titulosFormulario"    for="titulo">Título</label>
                 <input class="casillero" id="titulo" type="text" placeholder="Escriba el nombre de la película." name="titulo">
-                <span id="errorTitulo" class="error"></span>
-              </p>
-              <p>
-                  <input class="casillero" id="genero" type="text" placeholder="Escriba el género de la película." name="genero">
-                  <span id="errorGenero" class="error"></span>
-                </p>
-                <p>
-                    <input class="casillero" id="duración" type="number" placeholder="¿Cuánto dura la película?" name="duracion">
-                    <span id="errorDuracion" class="error"></span>
-                  </p>
-                  <p>
-                    <input class="casillero" id="comentario" type="text" placeholder="Escriba algún comentario sobre la película." name="comentario">
-                    <span id="errorPassword" class="error"></span>
-                  </p>
-              <p>
+                 
+                <label class="titulosFormulario" for="genero">Género</label>
+                <input class="casillero" id="genero" type="text" placeholder="Escriba el género de la película." name="genero">
+                            
+                 <label class="titulosFormulario" for="duracion">Duración</label>
+                <input class="casillero" id="duración" type="number" placeholder="¿Cuánto dura la película?" name="duracion">
+                                    
+                    <label class="titulosFormulario" for="imagen">Imágen</label>
+                    <input class="casillero" id="Imagen" type="file" placeholder="Aquí puede subir una imagen de la pelicula." name="comentario">
+                                   
                 <button class="botonAdministrarPeli" type="submit" class="btn btn-primary">Agregar la película.</button>
-              </p>
+              
              
             </form>
         </div>
-        <div class="tituloAdministrarPeli"><h1>Listado de películas</h1>
-            <h5>Estas son las películas que usted eligió.</h5>
+        <div class="tablaverPeli">
+          <h1 class="tituloAdministrarPeli">Listado de películas</h1>
+            <h5 class="tituloAdministrarPeli">Estas son las películas que usted eligió.</h5>
         </div>
         <div class="tablaAdministrarPeli">
-            <table class="encabezadotablapeliculas" id="encabezadotablapeliculas">
+            <table class="table table-dark table-striped" id="tablePeliculas">
                 <thead>
                  <tr>
                   <th>Película</th>
                   <th>Género</th>
                   <th>Duración</th>
-                  <th>Comentario</th>
+                  <th>Imagen</th>
                 </tr>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>    
                 </thead>
-               <tbody class="cuerpotablapeliculas" id="cuerpotablapeliculas">
-               </tbody>
+               <tbody id="bodyTablePeliculas">
+                  
+                </tbody>
             </table>
         </div>
     </div>
@@ -88,6 +78,24 @@
         crossorigin="anonymous">
     </script>
     <script src="../js/administrador_peli.js"></script>
-</body>
+
+    <footer>
+      <ul>
+          <li>
+              <a class="link-footer"  href="../index.html">Términos y condiciones</a></li>
+          <li>
+          <a class="link-footer" href="../index.html">Preguntas frecuentes</a>
+          </li>
+          <li>
+              <a class="link-footer" href="../index.html">Ayuda</a>
+          </li>
+          <li>
+              <a class="link-footer link-administrador" href="../index.html">Administrador Peliculas</a>
+          </li>
+      </ul>
+      <a href="#detalles" class="flecha-hacia-arriba"><img src="../img/flecha-hacia-arriba.png" alt="flecha-hacia-arriba"></a>
+  </footer>
+
+  </body>
 
 </html>
