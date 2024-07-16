@@ -1,23 +1,21 @@
-
-
 document.addEventListener('DOMContentLoaded', async() => {
 
     const options = {
         method: 'GET',
-        Headers: {
+        headers: {
             'Content-Type': 'application/json'
         }
     }
 
-    const response = await fetch('http://localhosts:8080/apimovies/peliculas, options');
+    const response = await fetch('http://localhost:8080/apimovies/peliculas', options);
 
-    const data = await response.json;
+    const data = await response.json();
 
-    console.log (data);
+    //console.log (data);
     
     const movies = data;
 
-    const tbody = document.getElementById('cuerpotablapeliculas');
+    const tbody = document.getElementById('bodyTablePeliculas');
 
     movies.forEach(movie => {
 
@@ -33,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async() => {
         // creamos un td con la imagen de la pelicula
         const tdImage = document.createElement('td');
         const img = document.createElement('img');
-        img.src = "../assets/img/" + movie.imagen;
+        img.src = "../img/" + movie.imagen;
         img.width = '150';
         img.alt = movie.titulo;
         tdImage.appendChild(img);
